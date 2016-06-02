@@ -101,7 +101,7 @@
                 <div class="col-md-3 col-md-offset-2">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                            <h3 class="panel-title">Yutopia (Build Type)</h3>
                         </div>
                         <div class="panel-body">
                             <p><a>Build Name</a></p>
@@ -114,7 +114,7 @@
                 <div class="col-md-3 col-md-offset-2">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                            <h3 class="panel-title">Yureka (Build Type)</h3>
                         </div>
                         <div class="panel-body">
                             <p><a>Build Name</a></p>
@@ -127,7 +127,7 @@
                 <div class="col-md-3 col-md-offset-2">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                            <h3 class="panel-title">Yuphoria (Build Type)</h3>
                         </div>
                         <div class="panel-body">
                             <p><a>Build Name</a></p>
@@ -140,7 +140,7 @@
                 <div class="col-md-3 col-md-offset-2">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                            <h3 class="panel-title">Yunique (Build Type)</h3>
                         </div>
                         <div class="panel-body">
                             <p><a>Build Name</a></p>

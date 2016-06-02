@@ -339,6 +339,25 @@ $(document).ready(function () {
     hasMoved = true;
     setTimeout(function () { hasMoved = true; }, 1500);
     setTimeout(function () { hasMoved = true; }, 3000);
+
+    $(".search").on("keyup", function(event) {
+        var text = $(this).val().toLowerCase();
+
+        if (text == "") {
+        	$(".panel").each(function () {
+        		$(this).show();
+        	})
+        } else {
+	        var notSelected = $(".panel-heading:has(h3)").filter(function() {
+	            return $(this).find("h3").text().toLowerCase().indexOf(text) !== 0;
+	        });
+	        notSelected.parent().hide();
+	        var selected = $(".panel-heading:has(h3)").filter(function() {
+	            return $(this).find("h3").text().toLowerCase().indexOf(text) >= text;
+	        });
+	        selected.parent().parent().parent().show();
+        }
+    });
 });
 
 // google analytics
