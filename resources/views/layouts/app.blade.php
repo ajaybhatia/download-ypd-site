@@ -5,7 +5,7 @@
       <!-- Main information -->
       <title>Downloads | YU Play Dev</title>
       <link rel="shortcut icon" href="">
-      <link rel="icon" sizes="192x192" href="">
+      <link rel="icon" sizes="16x16" href="{{ URL::asset('images/favicon.ico') }}">
       <link rel="apple-touch-icon" href="">
       <link rel="apple-touch-icon-precomposed" href="">
       <!-- HTML5 shim -->
@@ -21,6 +21,8 @@
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:500">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
       <!-- Fontawesome CSS -->
       <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css') }}">
       <!-- Custom style -->
@@ -31,9 +33,6 @@
       <header class="desktop">
          <div class="header-button">
             <p><a class="js-navigationlink" href="#">YU Play Dev</a></pa>
-         </div>
-         <div class="header-button">
-            <p><a class="js-navigationlink" href="#">Downloads</a></p>
          </div>
       </header>
       <header class="mobile">
@@ -46,20 +45,17 @@
          <div class="nav-side">
             <ul class="nav-side-central">
                <li>
-                  <p><a class="js-navigationlink" href="index.html">Home</a></p>
+                  <p><a class="js-navigationlink" href="#">Home</a></p>
                </li>
                <li>
-                  <p><a href="">Downloads</a></p>
+                  <p><a href="">YU Developers Programme</a></p>
                </li>
                <li>
-                  <p><a class="js-navigationlink" href=""></a></p>
+                  <p><a class="js-navigationlink" href="">YU Forums</a></p>
                </li>
                <li><span class="separator"></span></li>
                <li>
-                  <p><a href="">JIRA</a></p>
-               </li>
-               <li>
-                  <p><a href="">Gerrit</a></p>
+                  <p><a href="">Build</a></p>
                </li>
                <li>
                   <p><a href="https://github.com/YUTeleventures">GitHub</a></p>
@@ -71,7 +67,11 @@
          </div>
          <div class="nav-side">
             <div class="nav-side-central">
-               <p><a class="js-navigationlink" href="index.html">Some YU Icon</a></p>
+                <p>
+                    <a class="js-navigationlink" href="index.html">
+                        <img src="{{ URL::asset('images/yu_play_god_logo.jpg') }}" alt="">
+                    </a>
+                </p>
             </div>
          </div>
       </section>
@@ -84,62 +84,76 @@
       </noscript>
       <!-- Site section -->
       <section id="section-index" class="site-section visible">
-         <!-- Promotional images -->
-         <div class="carousel">
-            <img class="visible" src="">
-            <img src="">
-            <img src=""></div>
-         <!-- Introduction text -->
-         <div id="intro">
-            <img class="js-animate-viewport" src="">
-            <p>Introduction</p>
-            <span class="separator"></span>
-         </div>
-         <!-- Feature highlights -->
-         <div id="features">
-            <div class="feature">
-               <img class="demo js-animate-viewport" src="">
-               <div class="text">
-                  <p class="title">Title 1</p>
-                  <p class="description">
-                    Description 1
-                </p>
-               </div>
+        <!-- Promotional images -->
+        <!-- <div class="carousel">
+            <img class="visible" src="{{ URL::asset('images/yu_yunicorn.png') }}">
+            <img src="{{ URL::asset('images/yu_yutopia.png') }}">
+            <img src="{{ URL::asset('images/yu_yunique.png') }}">
+            <img src="{{ URL::asset('images/yu_yuphoria.png') }}">
+            <img src="{{ URL::asset('images/yu_yureka.png') }}">
+        </div> -->
+
+        <div class="downloads">
+            <input class="search" type="text" name="phone" value="" placeholder="Enter Phone Model to Search ROM">
+
+            <div class="row">
+
+                <div class="col-md-3 col-md-offset-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p><a>Build Name</a></p>
+                            <p>sha1</p>
+                        </div>
+                        <div class="panel-footer">Time Added</div>
+                    </div>        
+                </div>
+
+                <div class="col-md-3 col-md-offset-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p><a>Build Name</a></p>
+                            <p>sha1</p>
+                        </div>
+                        <div class="panel-footer">Time Added</div>
+                    </div>        
+                </div>
+
+                <div class="col-md-3 col-md-offset-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p><a>Build Name</a></p>
+                            <p>sha1</p>
+                        </div>
+                        <div class="panel-footer">Time Added</div>
+                    </div>        
+                </div>
+
+                <div class="col-md-3 col-md-offset-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Device Name (Build Type)</h3>
+                        </div>
+                        <div class="panel-body">
+                            <p><a>Build Name</a></p>
+                            <p>sha1</p>
+                        </div>
+                        <div class="panel-footer">Time Added</div>
+                    </div>        
+                </div>
+
             </div>
-            <div class="feature">
-               <img class="demo js-animate-viewport" src="">
-               <div class="text">
-                  <p class="title">Title 2</p>
-                  <p class="description">
-                      Description 2
-                  </p>
-               </div>
-            </div>
-            <div class="feature">
-               <img class="demo js-animate-viewport" src="">
-               <div class="text">
-                  <p class="title">Title 3</p>
-                  <p class="description">
-                      Description 3
-                  </p>
-               </div>
-            </div>
-            <div class="feature">
-               <img class="demo js-animate-viewport" src="">
-               <div class="text">
-                  <p class="title">Title 4</p>
-                  <p class="description">
-                      Description 4
-                  </p>
-               </div>
-            </div>
-            <div class="nofloat"></div>
-         </div>
-         <span class="separator"></span>
-         <!-- Footer quote -->
-         <footer>
-            <p>YU Televentures</p>
-         </footer>
+            
+        </div>
+
       </section>
       <!-- White placeholder screen for the initial animation -->
       <section class="site-section white"></section>
