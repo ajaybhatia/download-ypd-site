@@ -151,10 +151,10 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        downloads\Providers\AppServiceProvider::class,
+        downloads\Providers\AuthServiceProvider::class,
+        downloads\Providers\EventServiceProvider::class,
+        downloads\Providers\RouteServiceProvider::class,
 
         /*
          * AWS Service Provider
