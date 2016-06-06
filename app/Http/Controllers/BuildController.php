@@ -15,7 +15,7 @@ class BuildController extends Controller
      */
     public function index()
     {
-        //
+        return view('welcome');
     }
 
     /**
@@ -25,7 +25,7 @@ class BuildController extends Controller
      */
     public function create()
     {
-        //
+        return view('builds.create');
     }
 
     /**
