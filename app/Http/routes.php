@@ -11,12 +11,13 @@
 |
 */
 
+use downloads\Build;
+
 Route::get('/', function () {
-    return view('welcome');
+	$builds = Build::all();
+    return view('welcome', ['builds' => $builds]);
 });
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
-
-Route::resource('/builds', 'BuildController');
+Route::resource('builds', 'BuildController');

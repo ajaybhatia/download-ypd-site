@@ -60,6 +60,26 @@
                <li>
                   <p><a href="https://github.com/YUTeleventures">GitHub</a></p>
                </li>
+               <li><span class="separator"></span></li>
+               <!-- Authentication Links -->
+           @if (Auth::guest())
+               <li>
+                  <p><a href="{{ url('/login') }}">Login</a></p>
+               </li>
+           @else
+               <li>
+                  <p>
+                     <a href="#" role="button" aria-expanded="false">
+                       {{ Auth::user()->name }}
+                     </a>
+                  </p>
+               </li>
+              <li>
+                  <p>
+                     <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
+                  </p>
+               </li>
+           @endif
                <li class="desktop">
                   <p>Some Message</p>
                </li>

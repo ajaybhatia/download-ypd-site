@@ -6,8 +6,20 @@ use Illuminate\Http\Request;
 
 use downloads\Http\Requests;
 
+use downloads\Build;
+
 class BuildController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +27,9 @@ class BuildController extends Controller
      */
     public function index()
     {
-        return view('welcome');
+        $builds = Build::all();
+
+        return view('welcome', ['builds' => $builds]);
     }
 
     /**
@@ -36,7 +50,17 @@ class BuildController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $build = new Build;
+
+        $build->device_name = $request->device_name;
+        $build->build_type = $request->build_type;
+        $build->build_name = $request->build_name;
+        $build->build_path = $request->build_path;
+        $build->sha1 = $request->sha1;
+
+        $build->save();
+
+        return redirect('/');
     }
 
     /**

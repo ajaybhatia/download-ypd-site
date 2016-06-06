@@ -15,19 +15,21 @@
 
     <div class="row">
 
+    @foreach($builds as $build)
+
         <div class="col-md-3 col-md-offset-2">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">Yutopia (Build Type)</h3>
+                    <h3 class="panel-title">{{ $build->device_name }} ({{ $build->build_type }})</h3>
                 </div>
                 <div class="panel-body">
-                    <p><a>Build Name</a></p>
-                    <p>sha1</p>
+                    <p><a>{{ $build->build_name }}</a></p>
+                    <p>{{ $build->sha1 }}</p>
                 </div>
-                <div class="panel-footer">Time Added</div>
+                <div class="panel-footer">{{ $build->updated_at }}</div>
             </div>        
         </div>
-
+<!-- 
         <div class="col-md-3 col-md-offset-2">
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -65,8 +67,9 @@
                 </div>
                 <div class="panel-footer">Time Added</div>
             </div>        
-        </div>
+        </div> -->
 
+    @endforeach
     </div>
     
 </div>
