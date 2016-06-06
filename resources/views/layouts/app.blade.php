@@ -74,7 +74,14 @@
                      </a>
                   </p>
                </li>
-              <li>
+               <li>
+                  <p>
+                     <a href="{{ url('/builds/create') }}" role="button" aria-expanded="false">
+                       Add Build
+                     </a>
+                  </p>
+               </li>
+               <li>
                   <p>
                      <a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a>
                   </p>
