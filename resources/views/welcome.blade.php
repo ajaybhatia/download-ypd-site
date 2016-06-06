@@ -1,17 +1,73 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="panel panel-default">
-                <div class="panel-heading">Welcome</div>
+<!-- Promotional images -->
+<!-- <div class="carousel">
+    <img class="visible" src="{{ URL::asset('images/yu_yunicorn.png') }}">
+    <img src="{{ URL::asset('images/yu_yutopia.png') }}">
+    <img src="{{ URL::asset('images/yu_yunique.png') }}">
+    <img src="{{ URL::asset('images/yu_yuphoria.png') }}">
+    <img src="{{ URL::asset('images/yu_yureka.png') }}">
+</div> -->
 
-                <div class="panel-body">
-                    Your Application's Landing Page.
+<div class="downloads">
+    <input class="search" type="text" name="phone" value="" placeholder="Enter Phone Model to Search ROM">
+
+    <div class="row">
+
+        <div class="col-md-3 col-md-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Yutopia (Build Type)</h3>
                 </div>
-            </div>
+                <div class="panel-body">
+                    <p><a>Build Name</a></p>
+                    <p>sha1</p>
+                </div>
+                <div class="panel-footer">Time Added</div>
+            </div>        
         </div>
+
+        <div class="col-md-3 col-md-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Yureka (Build Type)</h3>
+                </div>
+                <div class="panel-body">
+                    <p><a>Build Name</a></p>
+                    <p>sha1</p>
+                </div>
+                <div class="panel-footer">Time Added</div>
+            </div>        
+        </div>
+
+        <div class="col-md-3 col-md-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Yuphoria (Build Type)</h3>
+                </div>
+                <div class="panel-body">
+                    <p><a>Build Name</a></p>
+                    <p>sha1</p>
+                </div>
+                <div class="panel-footer">Time Added</div>
+            </div>        
+        </div>
+
+        <div class="col-md-3 col-md-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Yunique (Build Type)</h3>
+                </div>
+                <div class="panel-body">
+                    <p><a>Build Name</a></p>
+                    <p>sha1</p>
+                </div>
+                <div class="panel-footer">Time Added</div>
+            </div>        
+        </div>
+
     </div>
+    
 </div>
 @endsection
